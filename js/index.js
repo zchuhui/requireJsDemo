@@ -23,22 +23,21 @@ require(['jquery','window'],function($,w){
 		//引用定制的窗口
 		$("#btnAlert").click(function(event) {
 
-			var html = '<div><h4>这是我想写的东西</h4>'
-						+'<p>爱情是怎么来的。爱情是怎么来的。爱情是怎么来的。爱情是怎么来的。爱情是怎么来的。。。。。</p></div>'
+			var html = '<div>这是一个 requireJs 的 demo：<p>定制一个通用弹窗组件！</p></div>';
 
 			win.alert({ 
-				title:'my love title',
+				title:'标题',
 				content:html, 
 				width:400,
 				height:200,
 				y:200,
 				hasBtn:true, 
-				btnTxt:'OK', 
+				btnTxt:'我懂了', 
 				handleBtn:function(){
-					alert("确定事件，随便定制喔");
+					alert("停，这里还可以定制事件喔");
 				},
-				skinUiClass:'window-skin-black',          //皮肤
-				dragHandle:'.window-alert-title'          //可拖动窗口的位置
+				skinUiClass:'',                   //皮肤，定制好的有：window-skin-black / window-skin-blue
+				dragHandle:'.window-alert-title'  //可拖动窗口的位置，指定头部
 			}); 
 
 			//alert(new w.Windows().text);  
