@@ -1,0 +1,102 @@
+body{
+	background: #eee; 
+}
+
+.window-alert-shade{
+	position: fixed;
+	top:0;
+	left:0;
+	display: none;
+	width:100%;
+	height:100%;
+	z-index: 9999; 
+	background: #000;
+	opacity: 0.3;
+}
+
+.window-alert{
+	position: fixed;
+	left:50%;
+	top:50%;
+	display: none; 
+	height: 200px;
+	width:400px;
+	font-size: 14px;
+	background:#FFF;
+	color:#333; 
+	z-index: 10000; 
+	box-shadow: 1px 1px 50px rgba(0,0,0,.3); 
+}
+
+.window-alert-title{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 20px;
+	background:#efefef;
+}
+
+.window-alert .window-alert-close{
+	position: absolute;
+	right:15px;
+	top:13px;
+	display: inline-block;
+	width:15px;
+	height:15px; 
+	background-image:url("../images/window-alert-close.png");
+	background-size: 15px auto;  
+	cursor:pointer;  
+}
+
+.window-alert-content{
+	border-top:1px solid #ddd;
+	padding:15px;
+	line-height: 20px;
+
+}
+
+.window-alert-btn{ 
+	position: absolute;
+	bottom:15px;
+	right:15px;
+	display: inline-block;
+	text-decoration: none;
+	min-width:60px;
+	height: 30px;
+	line-height:30px;
+	text-align: center;
+	border:1px solid #ddd;
+	border-radius:3px;
+	background-color: #eee; 
+	color: #333;
+
+}
+
+
+/* 皮肤定制：蓝色皮肤 */ 
+.window-skin-blue .window-alert-title{
+	background-color: #1E9FFF;
+	color:#FFF; 
+} 
+.window-skin-blue .window-alert-btn{
+	background-color: #1E9FFF;
+	color:#FFF; 
+} 
+.window-skin-blue .window-alert-close{
+	background-position: 0 -17px; 
+}
+
+/* 皮肤定制：黑色皮肤 */ 
+.window-skin-black{
+	background: #3F3F3F;   
+}
+.window-skin-black .window-alert-title{
+	background: #FFF; 
+}
+.window-skin-black .window-alert-content{
+	color:#FFF;  
+	background: #3F3F3F;   
+}
+
+
